@@ -50,9 +50,9 @@ npm run dev
 ```text
 company-ui-template/
 ├── app/
-│   ├── globals.css          # 全局样式、Tailwind v4 配置与品牌主题色变量 (--primary: #0E3183)
+│   ├── globals.css          # 全局样式、Tailwind v4 配置与品牌主题色变量 (--primary: #0E3183, --brand-orange: #EA5B18)
 │   ├── layout.tsx           # 根布局与字体配置
-│   ├── page.tsx             # 首页：综合业务落地页演示（商品筛选、弹窗清单、Tabs 切换等）
+│   ├── page.tsx             # 首页：企业级 AI 与 3D 空间资产智算云中枢控制台（涵盖 20+ 核心组件联动）
 │   └── components/
 │       └── page.tsx         # 组件画廊：63 个内置组件的可视化交互预览、检索与代码速查
 ├── components/
