@@ -1,10 +1,12 @@
 "use client"
 
 import * as React from "react"
+import Link from "next/link"
 import {
   Armchair,
   ArrowRight,
   Check,
+  Layers,
   Search,
   ShieldCheck,
   ShoppingBag,
@@ -183,17 +185,28 @@ export default function Home() {
             </div>
           </div>
 
-          {/* 采购清单弹窗 */}
-          <Dialog>
-            <DialogTrigger
-              render={
-                <Button variant="outline" className="gap-2">
-                  <ShoppingBag className="size-4" />
-                  <span>采购清单</span>
-                  <Badge>{cartIds.length}</Badge>
-                </Button>
-              }
-            />
+          <div className="flex items-center gap-2">
+            <Button
+              variant="secondary"
+              className="gap-1.5"
+              nativeButton={false}
+              render={<Link href="/components" />}
+            >
+              <Layers className="size-4" />
+              <span>组件库预览 (63)</span>
+            </Button>
+
+            {/* 采购清单弹窗 */}
+            <Dialog>
+              <DialogTrigger
+                render={
+                  <Button variant="outline" className="gap-2">
+                    <ShoppingBag className="size-4" />
+                    <span>采购清单</span>
+                    <Badge>{cartIds.length}</Badge>
+                  </Button>
+                }
+              />
             <DialogContent className="sm:max-w-md">
               <DialogHeader>
                 <DialogTitle>我的家具采购清单</DialogTitle>
@@ -253,6 +266,7 @@ export default function Home() {
               </DialogFooter>
             </DialogContent>
           </Dialog>
+          </div>
         </div>
       </header>
 
