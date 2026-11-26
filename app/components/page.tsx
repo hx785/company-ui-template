@@ -105,6 +105,7 @@ import {
   TraceLine,
   TraceTitle,
 } from "@/components/ui/trace"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 type ComponentCategory =
   | "全部"
@@ -649,6 +650,7 @@ export default function ComponentsGalleryPage() {
             </div>
 
             <div className="flex items-center gap-2">
+              <ThemeToggle />
               <Button
                 variant="outline"
                 size="sm"

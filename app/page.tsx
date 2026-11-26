@@ -180,6 +180,7 @@ import {
   TraceLine,
   TraceTitle,
 } from "@/components/ui/trace"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 type WorkspaceEnv = "prod-cn-east" | "staging-sh" | "dev-sandbox"
 type PipelineStatus = "运行中" | "构建中" | "异常告警" | "已休眠"
@@ -547,6 +548,9 @@ export default function EnterpriseConsolePage() {
 
             {/* 右侧环境选择器、通知中心、组件库入口与用户菜单 */}
             <div className="flex items-center gap-2.5">
+              {/* 浅色 / 深色模式切换按钮（默认浅色） */}
+              <ThemeToggle />
+
               {/* 集群环境切换 Select */}
               <div className="hidden sm:block">
                 <Select
