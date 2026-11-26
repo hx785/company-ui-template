@@ -2,7 +2,7 @@
 
 基于 **Next.js 16 + React 19 + Tailwind CSS v4 + Base UI (`@base-ui/react`) + shadcn/ui (`base-nova` 风格)** 构建的企业级前端项目起步模板。
 
-内置 **63 个开箱即用的 UI 组件**（涵盖通用管理后台、表单交互、数据可视化以及 **AI 对话 / Agent 专属组件**），并预置了企业品牌主题色（`#0E3183`）与交互示例页面，帮助团队新项目在 1 分钟内完成初始化。
+内置 **63 个开箱即用的 UI 组件**（涵盖通用管理后台、表单交互、数据可视化以及 **AI 对话 / Agent 专属组件**），并预置了企业品牌主色（科技蓝 `#0E3183`）与辅助色/组件图标色（活力橙 `#EA5B18`），帮助团队新项目在 1 分钟内完成初始化。
 
 ---
 
@@ -243,19 +243,31 @@ export function AIChatDemo() {
 
 ## 🎨 主题与品牌定制
 
-打开 `app/globals.css`，在 `:root` 和 `.dark` 下即可修改全局品牌主色与圆角大小：
+打开 `app/globals.css`，在 `:root` 和 `.dark` 下即可修改全局品牌主色、橙色辅助色/图标色与圆角大小：
 
 ```css
 :root {
-  /* 企业品牌主色（默认深海蓝 #0E3183） */
+  /* 企业品牌主色（默认科技深蓝 #0E3183） */
   --primary: #0E3183;
   --primary-foreground: #FFFFFF;
   --ring: #0E3183;
+
+  /* 组件图标色与品牌活力橙 (#EA5B18) */
+  --brand-orange: #EA5B18;
+  --icon: #EA5B18;
+
+  /* 辅助色与高亮悬停色（浅橙底 #FFF2EB + 活力橙字 #EA5B18） */
+  --secondary: #FFF2EB;
+  --secondary-foreground: #EA5B18;
+  --accent: #FFF2EB;
+  --accent-foreground: #EA5B18;
 
   /* 全局基础圆角（默认 0.5rem 适中圆角） */
   --radius: 0.5rem;
 }
 ```
+
+> 💡 在编写自定义业务组件时，可直接使用 Tailwind 工具类 `text-brand-orange`、`bg-brand-orange`、`border-brand-orange` 或 `bg-secondary text-secondary-foreground` 来应用统一的橙色图标与辅助色规范。
 
 ---
 

@@ -175,7 +175,7 @@ export default function Home() {
 
           <div className="hidden w-full max-w-sm items-center gap-2 sm:flex">
             <div className="relative flex-1">
-              <Search className="pointer-events-none absolute top-1/2 left-2.5 size-4 -translate-y-1/2 text-muted-foreground" />
+              <Search className="pointer-events-none absolute top-1/2 left-2.5 size-4 -translate-y-1/2 text-brand-orange" />
               <Input
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
@@ -237,7 +237,7 @@ export default function Home() {
                         size="icon-sm"
                         onClick={() => toggleCart(item.id)}
                       >
-                        <Trash2 className="size-4 text-muted-foreground" />
+                        <Trash2 className="size-4 text-brand-orange" />
                       </Button>
                     </div>
                   ))}
@@ -379,7 +379,7 @@ export default function Home() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="flex h-36 items-center justify-center rounded-lg bg-gradient-to-br from-slate-100 to-blue-50 text-primary">
+              <div className="flex h-36 items-center justify-center rounded-lg bg-gradient-to-br from-slate-100 to-blue-50 text-brand-orange">
                 <Armchair className="size-16 stroke-[1.5]" />
               </div>
             </CardContent>
@@ -487,7 +487,7 @@ export default function Home() {
                     >
                       <CardHeader>
                         <div
-                          className={`mb-2 flex h-40 items-center justify-center rounded-lg bg-gradient-to-br ${item.tone} text-primary/80`}
+                          className={`mb-2 flex h-40 items-center justify-center rounded-lg bg-gradient-to-br ${item.tone} text-brand-orange`}
                         >
                           <Armchair className="size-12 stroke-[1.5]" />
                         </div>
@@ -595,7 +595,7 @@ export default function Home() {
             <div className="grid gap-6 sm:grid-cols-3">
               <Card>
                 <CardHeader>
-                  <ShieldCheck className="size-8 text-primary" />
+                  <ShieldCheck className="size-8 text-brand-orange" />
                   <CardTitle className="pt-2">5 年结构质保</CardTitle>
                   <CardDescription>
                     所有实木框架享受 5 年质保服务，非人为损坏免费维修或更换。
@@ -604,7 +604,7 @@ export default function Home() {
               </Card>
               <Card>
                 <CardHeader>
-                  <Truck className="size-8 text-primary" />
+                  <Truck className="size-8 text-brand-orange" />
                   <CardTitle className="pt-2">全国送货入户安装</CardTitle>
                   <CardDescription>
                     专业家居配送团队送货上楼并现场组装调试，带走全部包装垃圾。
@@ -613,7 +613,7 @@ export default function Home() {
               </Card>
               <Card>
                 <CardHeader>
-                  <Sparkles className="size-8 text-primary" />
+                  <Sparkles className="size-8 text-brand-orange" />
                   <CardTitle className="pt-2">母婴级环保漆面</CardTitle>
                   <CardDescription>
                     全线采用欧洲进口植物木蜡油与低甲醛环保板材，即装即住。
@@ -628,7 +628,7 @@ export default function Home() {
       <footer className="mt-12 border-t bg-muted/20">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-6 py-6 text-xs text-muted-foreground sm:flex-row">
           <span>© 2026 森屿家居 SENYU · 基于企业定制 shadcn/ui 组件库构建</span>
-          <span>品牌主色：#0E3183 · 适中圆角风格</span>
+          <span>品牌主色：#0E3183 · 辅助色与图标色：#EA5B18 (活力橙)</span>
         </div>
       </footer>
     </div>

@@ -81,7 +81,7 @@ function BreadcrumbSeparator({
       data-slot="breadcrumb-separator"
       role="presentation"
       aria-hidden="true"
-      className={cn("[&>svg]:size-3.5", className)}
+      className={cn("text-brand-orange [&>svg]:size-3.5", className)}
       {...props}
     >
       {children ?? (

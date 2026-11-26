@@ -669,6 +669,7 @@ export default function ComponentsGalleryPage() {
               <CardHeader>
                 <div className="flex items-center gap-2">
                   <Badge>开箱即用</Badge>
+                  <Badge variant="secondary">辅助色 & 图标 #EA5B18</Badge>
                   <span className="text-xs text-muted-foreground">
                     品牌主色 #0E3183 · 适中圆角 0.5rem
                   </span>
@@ -891,7 +892,7 @@ export default function ComponentsGalleryPage() {
                         <Trace className="rounded-md border bg-background px-3 py-2">
                           <TraceLine>
                             <TraceIcon>
-                              <CheckCircle2 className="size-4 text-primary" />
+                              <CheckCircle2 className="size-4 text-brand-orange" />
                             </TraceIcon>
                             <TraceTitle>
                               已扫描 components/ui 目录下的 63 个组件模块
@@ -900,7 +901,7 @@ export default function ComponentsGalleryPage() {
                           </TraceLine>
                           <TraceLine status="running">
                             <TraceIcon>
-                              <Spinner className="size-3.5" />
+                              <Spinner className="size-3.5 text-brand-orange" />
                             </TraceIcon>
                             <TraceTitle>
                               正在生成 Bubble、Message、Trace 与 Questionnaire 组合示例...
@@ -1159,7 +1160,7 @@ export default function ComponentsGalleryPage() {
                             <Skeleton className="h-3.5 w-1/2" />
                             <Skeleton className="h-3 w-4/5" />
                           </div>
-                          <Spinner className="size-4 text-muted-foreground" />
+                          <Spinner className="size-4 text-brand-orange" />
                         </div>
                       </div>
                     </CardContent>
@@ -1186,7 +1187,7 @@ export default function ComponentsGalleryPage() {
               </div>
 
               <div className="relative w-full sm:w-72">
-                <Search className="pointer-events-none absolute top-1/2 left-2.5 size-4 -translate-y-1/2 text-muted-foreground" />
+                <Search className="pointer-events-none absolute top-1/2 left-2.5 size-4 -translate-y-1/2 text-brand-orange" />
                 <Input
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
